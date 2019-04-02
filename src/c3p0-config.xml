@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/ceh?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT%2B8</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+		<property name="initialPoolSize">15</property>	
+		<!--连接池中保留的最小连接数。 -->
+        <property name="minPoolSize">
+            <value>10</value>
+        </property>
+ 
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize">
+            <value>35</value>
+        </property>
+	</default-config>
+</c3p0-config>
